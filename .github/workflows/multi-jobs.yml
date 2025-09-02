@@ -14,9 +14,9 @@ jobs:
       - name: Affichage de la variable
         run: echo "Répertoire de build : $BUILD_PATH"
 
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+test:
+  needs: build
+  runs-on: ubuntu-latest
+  steps:
       - name: Étape de test
         run: echo "✅ Je teste le code (après build)"
